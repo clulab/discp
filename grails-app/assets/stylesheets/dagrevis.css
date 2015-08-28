@@ -1,0 +1,224 @@
+/*
+ *= require dagre/tipsy.css
+ *= require self
+ */
+
+.parseBox {
+    border-color: #999999;
+    border-style: solid;
+    border-width: 1px;
+    height: 100%;
+    min-height: 2em;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.synTreeBox {
+    background-color: #ddd;
+    border-color: #777777;
+    border-style: solid;
+    border-width: 1px;
+    min-height: 600px;
+    margin-top: 10px;
+    padding: 0px;
+    overflow: auto;
+    width: 100%;
+}
+
+.visTreeBox {
+    background-color: #ddd;
+    border-color: #777777;
+    border-style: solid;
+    border-width: 1px;
+    height: 100%;
+    margin-top: 10px;
+    min-height: 200px;
+    padding: 0px;
+    overflow: auto;
+    resize: both;
+    width: 100%;
+}
+
+
+/* Styles for dagreD3 visualizations. */
+text {
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+    font-size: 14px;
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node rect {
+    stroke: #555;
+    fill: #fff;
+    stroke-width: 1.5px;
+}
+
+.edgePath path {
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+.link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.5px;
+}
+
+/* attribution, background, cause, comparison, condition, contrast, */
+/* elaboration, enablement, evaluation, explanation, joint, manner-means, */
+/* topic-comment, summary, temporal, topic-change, textual-organization, same-unit */
+
+g.leaf > rect {
+    fill: white;
+}
+
+g.attribution > rect {
+    fill: #98fb98;                          /* pale green */
+}
+g.background > rect {
+    fill: #dda0dd;                          /* plum */
+}
+g.cause > rect {
+    fill: #7cfc00;                          /* lawn green */
+}
+g.condition > rect {
+    fill: #7fffd4;                          /* aquamarine */
+}
+g.contrast > rect {
+    fill: #ffff7f;                          /* medium yellow */
+}
+g.comparison > rect {
+    fill: #ffa07a;                          /* light salmon */
+}
+g.elaboration > rect {
+    fill: #afffff;                          /* light cyan */
+}
+g.enablement > rect {
+    fill: #e6e6fa;                          /* lavender */
+}
+g.evaluation > rect {
+    fill: #ffc0cb;                          /* pink */
+}
+g.explanation > rect {
+    fill: #d8bfd8;                          /* thistle */
+}
+g.joint > rect {
+    fill: #00bfff;                          /* deep sky blue */
+}
+g.manner-means > rect {
+    fill: #b0e0e6;                          /* powder blue */
+}
+g.same-unit > rect {
+    fill: #87cefa;                          /* light sky blue */
+}
+g.summary > rect {
+    fill: #ffe4b5;                          /* moccasin */
+}
+g.temporal > rect {
+    fill: #00ff7f;                          /* spring green */
+}
+g.textual-organization > rect {
+    fill: #b0c4de;                          /* light steel blue */
+}
+g.topic-comment > rect,
+g.topic-change > rect {
+    fill: #ffd700;                          /* gold */
+}
+
+/*    fill: #00bfff;                          deep sky blue */
+/*    fill: #00ff7f;                          spring green */
+/*    fill: #7cfc00;                          lawn green */
+/*    fill: #7fffd4;                          aquamarine */
+/*    fill: #87cefa;                          light sky blue */
+/*    fill: #98fb98;                          pale green */
+/*    fill: #afeeee;                          pale turquoise */
+/*    fill: #afffff;                          light cyan */
+/*    fill: #b0c4de;                          light steel blue */
+/*    fill: #b0e0e6;                          powder blue */
+/*    fill: #d8bfd8;                          thistle */
+/*    fill: #dda0dd;                          plum */
+/*    fill: #e6e6fa;                          lavender */
+/*    fill: #ffa07a;                          light salmon */
+/*    fill: #ffc0cb;                          pink */
+/*    fill: #ffd700;                          gold */
+/*    fill: #ffe4b5;                          moccasin */
+/*    fill: #ffff7f;                          medium yellow */
+
+
+
+/* Styles for tree-vis (d3Tree) visualizations. */
+.tv-edgePath path {
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+.tv-link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.5px;
+}
+
+.tv-nodeText {
+    text-align: center;
+}
+
+.tv-node {
+    cursor: pointer;
+    stroke: #555;
+    fill: #fff;
+    stroke-width: 1.5px;
+}
+
+.tv-nodeRect {
+    fill: white;
+    padding: 2px;
+    stroke: blue;
+    stroke-width: 1.5px;
+}
+
+.tv-rolled-up {
+    fill: cyan;
+}
+
+
+
+/* Styles for Tipsy library. */
+.tipsy {
+    font-size: 14px;
+    position: absolute;
+    padding: 5px;                           /* allow room for arrow outside tipsy-inner */
+    z-index: 100000;
+}
+
+.tipsy-sw .tipsy-arrow {                    /* red arrow on left bottom */
+    border-top-color: red;
+    left: 15px;
+}
+
+.tipsy-inner {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* style the aux info of a tooltip. */
+.tipsy .key {
+    color: #00ff00;                         /* green */
+    font-weight: bold;
+}
+
+/* style the title of a tooltip. */
+.tipsy .title {
+    color: #00ffff;                         /* cyan */
+    font-weight: bold;
+}
+
+/* style the description of a tooltip. */
+.tipsy .description {
+    text-align: left;
+}

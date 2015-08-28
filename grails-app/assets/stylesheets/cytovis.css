@@ -1,0 +1,16 @@
+/*
+ *= require self
+ */
+
+.cytoBox {
+    background-color: #eee;
+    border-color: #999999;
+    border-style: solid;
+    border-width: 1px;
+    height: 100%;
+    min-height: 500px;
+    padding: 0px;
+    overflow: auto;
+    resize: both;
+    width: 100%;
+}

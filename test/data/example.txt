@@ -1,0 +1,2 @@
+RFLAT-1: a new zinc finger transcription factor that activates RANTES gene expression in T lymphocytes.
+RANTES (Regulated upon Activation, Normal T cell Expressed and Secreted) is a chemoattractant cytokine (chemokine) important in the generation of inflammatory infiltrate and human immunodeficiency virus entry into immune cells. RANTES is expressed late (3-5 days) after activation in T lymphocytes.
